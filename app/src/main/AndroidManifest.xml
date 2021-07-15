@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.banking_m_connect">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_bank"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_bank"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Banking_M_Connect">
+
+        <activity
+            android:name=".MainActivity"
+            android:label="Banking M-Connect"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
+
+        <activity
+            android:name="user_list"
+            android:label="Banking M-Connect"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="user_data"
+            android:label="User Details"
+            android:parentActivityName="user_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="sendtouser"
+            android:label="Transfer Money"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
+            android:name="history_list"
+            android:label="Transactions"
+            android:parentActivityName="user_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity android:name="SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
